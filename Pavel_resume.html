@@ -7,75 +7,103 @@
     <meta name="keywords" content="resume, Pavel">
     <meta name="description" content="Learner's resume website">
     <title>Pavel resume website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<img src="Photo_for_resume.png" alt="Photo for resume" width="200">
-<h1>Шмырев Павел</h1>
-    <p> <strong> Я хочу стать разработчиком Java Script</strong>, <em> но для этого надо изучить HTML и CSS</em></p>
-    <p><strong> <em>Люблю заниматься спортом</em> </strong>, путешествовать и <em> решать задачи на Codewars</em></p>
+<body>
+    <div class="container">
+                     
+         <div class="info">
+            
+            <img src="Photo_for_resume.png" alt="Photo for resume" class="avatar">
 
-<h2>Опыт работы</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Наименование компании</th>
-            <th>Должность</th>
-            <th>Год</th>  
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Севкабель</td>
-            <td>Специалист по тендерам</td>
-            <td>2017-2021</td>
-        </tr>
-        <tr>
-            <td>ТД Электрозавод</td>
-            <td>Специалист по тендерам</td>
-            <td>2021-по настоящее время</td>
-        </tr>
-    </tbody>
-</table>
+            <div class="card, description-social">
 
-    <h3>Мои хобби</h3>
-<ol>
-    <li>Спорт</li>
-    <li>Петешествия</li>
-    <li>Прогулки</li>
-    <li>Java script</li>
-</ol>
+                <h1>Шмырев Павел</h1>
 
-<h4>Список социальных сетей</h4>
-   
-    <a href="https://vk.com/id64482565" target="_blank" > ВКонтакте</a>
-    <span>|</span>
-    <a href="https://t.me/sh_pavel_v" target="_blank">Telegram</a>
+                <div class="description, text" >
+                    <p> <strong> Я хочу стать разработчиком Java Script</strong>, <em> но для этого надо изучить HTML и CSS</em></p>
+                    <p><strong> <em>Люблю заниматься спортом</em> </strong>, путешествовать и <em> решать задачи на Codewars</em></p>
 
-<h4>Связаться со мной</h4>
+                </div>
 
-<form action="">
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+                <h4>Список социальных сетей</h4>
+
+                <div class="text">
+                    <a href="https://vk.com/id64482565" target="_blank" > ВКонтакте</a>
+                    <span>|</span>
+                    <a href="https://t.me/sh_pavel_v" target="_blank">Telegram</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+        <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Наименование компании</th>
+                        <th>Должность</th>
+                        <th>Год</th>  
+                    </tr>
+                </thead>
+                <tbody class="text">
+                    <tr>
+                        <td>Севкабель</td>
+                        <td>Специалист по тендерам</td>
+                        <td>2017-2021</td>
+                    </tr>
+                    <tr>
+                        <td>ТД Электрозавод</td>
+                        <td>Специалист по тендерам</td>
+                        <td>2021-по настоящее время</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Мои хобби</h2>
+            <div class="text">
+                <ol class="list">
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                    <li>Прогулки</li>
+                    <li>Java script</li>
+                </ol>
+            </div>
+        </div>
+              
+        <div class="card">
+                   
+            <form action="" class="form">
+                <h3>Связаться со мной</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" class="label">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email" class="label">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="label">Ваше сообщение:</label>
+                        
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                
+                <div>
+                    <button type="submit" class="btn">Отправить!</button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-
-    <div>
-        <button type="submit">Отправить!</button>
-    </div>
-</form>
-
-    <body>
     
 </body>
 </html>
